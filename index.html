@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ping Pong Scoreboard</title>
+	<style>
+		.winner {
+			color: green;
+		}
+		.loser{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<h1><span id="player1score">0</span> to <span id="player2score">0</span></h1>
+<div>
+<input type="text" id="p1name">
+<button type="button" onclick="getp1Value()">Register</button>
+<button id="p1button">Player One</button>
+<input type="checkbox" id="server1">
+<label for"server1">Server</label>
+</div>
+<div>
+<input type="text" id="p2name">
+<button type="button" onclick="getp2Value()">Register</button>
+<button id="p2button">Player Two</button>
+<input type="checkbox" id="server2">
+<label for"server2">Server</label>
+</div>
+<button id="terminate">Terminate</button>
+<button id="scores">Score Ranking</button>
+<ul id="scorelist"></ul>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
